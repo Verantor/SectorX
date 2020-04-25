@@ -6,19 +6,23 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace FlightControlerBus.HUD
-{
+
     public class Hud : MonoBehaviour
     {
         [Header("Components")]
-        [SerializeField] private FlightControler mouseFlight = null;
+    [SerializeField] private FlightControler mouseFlight = null;
+    [SerializeField] private PlaneControler planeControler = null;
 
-        [Header("HUD Elements")]
+
+
+    [Header("HUD Elements")]
         [SerializeField] private RectTransform boresight = null;
         [SerializeField] private RectTransform mousePos = null;
         [SerializeField] private Text TextKMH = null;
+    [SerializeField] private Slider SpeedSlider = null;
+    [SerializeField] private Slider WaitForBreak = null;
 
-        private Camera playerCam = null;
+    private Camera playerCam = null;
 
         private void Awake()
         {
@@ -52,17 +56,25 @@ namespace FlightControlerBus.HUD
                 mousePos.position = playerCam.WorldToScreenPoint(controller.MouseAimPos);
                 mousePos.gameObject.SetActive(mousePos.position.z > 1f);
             }
-            if (TextKMH!= null)
+            if (TextKMH != null)
             {
                 float x = controller.aircraft.gameObject.GetComponent<Rigidbody>().velocity.magnitude * 3.6f;
-                
-                TextKMH.text = x.ToString();
+
+                TextKMH.text = x.ToString() + " KM/H";
             }
+        if (SpeedSlider != null)
+        {
+            SpeedSlider.value = planeControler.speed;
         }
+        if (WaitForBreak != null)
+        {
+            WaitForBreak.value = planeControler.HowLongAreStanding;
+        }
+    }
 
         public void SetReferenceMouseFlight(FlightControler controller)
         {
             mouseFlight = controller;
         }
     }
-}
+

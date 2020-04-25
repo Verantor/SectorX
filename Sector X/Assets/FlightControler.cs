@@ -1,9 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace FlightControlerBus
-{
-  
+
         public class FlightControler : MonoBehaviour
         {
             [Header("Components")]
@@ -36,6 +34,8 @@ namespace FlightControlerBus
             [SerializeField]
             [Tooltip("How far the boresight and mouse flight are from the aircraft")]
             private float aimDistance = 500f;
+
+            public float speed;
 
             [Space]
             [SerializeField]
@@ -216,4 +216,3 @@ namespace FlightControlerBus
         }
     
 
-}

@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace FlightControlerBus.Plane 
-{
+
     
         [RequireComponent(typeof(Rigidbody))]
         public class PlaneControler : MonoBehaviour
@@ -30,7 +29,9 @@ namespace FlightControlerBus.Plane
 
             private bool rollOverride = false;
             private bool pitchOverride = false;
+        public float HowLongAreStanding = 0;
 
+        public float speed;
 
         public ParticleSystem ParticleSystem1;
         public ParticleSystem ParticleSystem2;
@@ -80,6 +81,9 @@ namespace FlightControlerBus.Plane
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 thrust = 500f;
+            HowLongAreStanding = 0;
+            forceMult = 100;
+            speed = 100;
                 ParticleSystem1.startSpeed = 10f;
                 ParticleSystem1.startSpeed = 10f;
                 ParticleSystem3.startSpeed = 10f;
@@ -89,7 +93,8 @@ namespace FlightControlerBus.Plane
             if (Input.GetKeyUp(KeyCode.Space))
             {
                 thrust = 100f;
-                ParticleSystem1.startSpeed = 7f;
+            speed = 50;
+            ParticleSystem1.startSpeed = 7f;
                 ParticleSystem1.startSpeed = 7f;
                 ParticleSystem3.startSpeed = 7f;
                 ParticleSystem4.startSpeed = 7f;
@@ -98,24 +103,49 @@ namespace FlightControlerBus.Plane
 
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
-                thrust = 0;
+            speed = 0;
+            thrust = 0;
                 ParticleSystem1.startSpeed = 5f;
                 ParticleSystem2.startSpeed = 5f;
                 ParticleSystem3.startSpeed = 5f;
                 ParticleSystem4.startSpeed = 5f;
+            StartCoroutine(TurnSpeedOf());
             }
-            else
-            if (Input.GetKeyUp(KeyCode.LeftShift))
-            {
-                thrust = 100f;
-                ParticleSystem1.startSpeed = 7f;
-                ParticleSystem2.startSpeed = 7f;
-                ParticleSystem3.startSpeed = 7f;
-                ParticleSystem4.startSpeed = 7f;
-
-            }
+        else
+            if (Input.GetKeyUp(KeyCode.LeftShift) && HowLongAreStanding != 4)
+        {
+            speed = 50;
+            thrust = 100f;
+            forceMult = 100;
+            HowLongAreStanding = 0;
+            ParticleSystem1.startSpeed = 7f;
+            ParticleSystem2.startSpeed = 7f;
+            ParticleSystem3.startSpeed = 7f;
+            ParticleSystem4.startSpeed = 7f;
 
         }
+        else
+            if (Input.GetKey(KeyCode.LeftShift) && HowLongAreStanding == 4)
+        {
+            speed = 0;
+            thrust = 0;
+            forceMult = 0;
+        }
+      
+
+    }
+    IEnumerator TurnSpeedOf()
+    {
+        Debug.Log("SAS1");
+        while (Input.GetKey(KeyCode.LeftShift) && HowLongAreStanding <=3)
+        {
+            Debug.Log("SAS");
+            yield return new WaitForSeconds(1f);
+            HowLongAreStanding++;
+        }
+   
+
+    }
 
             private void RunAutopilot(Vector3 flyTarget, out float yaw, out float pitch, out float roll)
             {
@@ -175,4 +205,3 @@ namespace FlightControlerBus.Plane
         }
     
 
-}
