@@ -7,9 +7,9 @@ namespace FlightControlerBus
         public class FlightControler : MonoBehaviour
         {
             [Header("Components")]
-            [SerializeField]
+           
             [Tooltip("Transform of the aircraft the rig follows and references")]
-            private Transform aircraft = null;
+            public Transform aircraft = null;
             [SerializeField]
             [Tooltip("Transform of the object the mouse rotates to generate MouseAim position")]
             private Transform mouseAim = null;

@@ -34,14 +34,14 @@ namespace FlightControlerBus.Plane
 
         public ParticleSystem ParticleSystem1;
         public ParticleSystem ParticleSystem2;
-        ParticleSystem.EmissionModule emissionModule1;
-        ParticleSystem.EmissionModule emissionModule2;
+        public ParticleSystem ParticleSystem3;
+        public ParticleSystem ParticleSystem4;
+
 
         private void Awake()
             {
                 rigid = GetComponent<Rigidbody>();
-            emissionModule1 = ParticleSystem1.emission;
-            emissionModule2 = ParticleSystem2.emission;
+           
             if (controller == null)
                     Debug.LogError(name + ": Plane - Missing reference to MouseFlightController!");
             }
@@ -80,32 +80,39 @@ namespace FlightControlerBus.Plane
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 thrust = 500f;
-                emissionModule1.rateOverTime = 12;
-                emissionModule2.rateOverTime = 12;
+                ParticleSystem1.startSpeed = 10f;
+                ParticleSystem1.startSpeed = 10f;
+                ParticleSystem3.startSpeed = 10f;
+                ParticleSystem4.startSpeed = 10f;
             }
             else
             if (Input.GetKeyUp(KeyCode.Space))
             {
                 thrust = 100f;
-                emissionModule1.rateOverTime = 6;
-                emissionModule2.rateOverTime = 6;
+                ParticleSystem1.startSpeed = 7f;
+                ParticleSystem1.startSpeed = 7f;
+                ParticleSystem3.startSpeed = 7f;
+                ParticleSystem4.startSpeed = 7f;
             }
 
 
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
                 thrust = 0;
-                emissionModule1.rateOverTime = 3;
-                emissionModule2.rateOverTime = 3;
-              
+                ParticleSystem1.startSpeed = 5f;
+                ParticleSystem2.startSpeed = 5f;
+                ParticleSystem3.startSpeed = 5f;
+                ParticleSystem4.startSpeed = 5f;
             }
             else
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
                 thrust = 100f;
-                emissionModule1.rateOverTime = 6;
-                emissionModule2.rateOverTime = 6;
-      
+                ParticleSystem1.startSpeed = 7f;
+                ParticleSystem2.startSpeed = 7f;
+                ParticleSystem3.startSpeed = 7f;
+                ParticleSystem4.startSpeed = 7f;
+
             }
 
         }

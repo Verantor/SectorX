@@ -1,0 +1,46 @@
+Base path: 'C:/Program Files/Unity/Hub/Editor/2019.3.11f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2019.3.11f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=21596 outsize=27350 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=9615 outsize=4306 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=9809 outsize=4981 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4823 outsize=2751 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=14139 outsize=666 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=11086 outsize=4699 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=40264 outsize=41874 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=22295 outsize=15349 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=8233 outsize=695 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=22339 outsize=2349 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=6745 outsize=1297 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=6745 outsize=764 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=9103 outsize=2745 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=26542 outsize=15415 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=16295 outsize=115916 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=16295 outsize=47854 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=16295 outsize=47858 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=7696 outsize=5531 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3916 outsize=1613 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=10587 outsize=7759 ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=7443 outsize=142 kw=_NORMALMAP_TANGENT_SPACE _NORMALMAP _DETAIL_MAP pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=7443 outsize=142 kw=_NORMALMAP_TANGENT_SPACE _NORMALMAP _MASKMAP _EMISSIVE_COLOR_MAP _SPECULARCOLORMAP _MATERIAL_FEATURE_SPECULAR_COLOR pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1

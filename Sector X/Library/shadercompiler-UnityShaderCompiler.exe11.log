@@ -1,0 +1,52 @@
+Base path: 'C:/Program Files/Unity/Hub/Editor/2019.3.11f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2019.3.11f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=9809 outsize=5133 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4823 outsize=2835 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=14139 outsize=665 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=11086 outsize=666 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3111 outsize=2047 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=40264 outsize=37933 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=40264 outsize=37933 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=22295 outsize=14637 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=11494 outsize=4119 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=9735 outsize=7830 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=9735 outsize=13300 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=22339 outsize=982 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=6119 outsize=2055 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=6745 outsize=4889 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=9103 outsize=4225 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=26542 outsize=324 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=16295 outsize=67477 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=16295 outsize=79522 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=16295 outsize=40387 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=16295 outsize=49578 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=7696 outsize=5189 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=28593 outsize=426 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=11069 outsize=8912 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=13959 outsize=2134 ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=7919 outsize=5702 kw=DECALS_3RT _NORMALMAP_TANGENT_SPACE pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
